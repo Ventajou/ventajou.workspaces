@@ -79,7 +79,7 @@ Item {
   function dismiss() {
     root.close()
     if (root.shell && typeof root.shell.hide === "function")
-      root.shell.hide((root.manifest && root.manifest.id) || "ventajou.spaces")
+      root.shell.hide((root.manifest && root.manifest.id) || "ventajou.workspaces")
   }
 
   function toggle() {
@@ -614,7 +614,7 @@ Item {
   ])
 
   IpcHandler {
-    target: "ventajou.spaces"
+    target: "ventajou.workspaces"
     function toggle(): string {
       root.toggle()
       return "ok"
@@ -752,7 +752,7 @@ Item {
         visible: true
         color: "transparent"
         exclusionMode: ExclusionMode.Ignore
-        WlrLayershell.namespace: "andre-spaces"
+        WlrLayershell.namespace: "ventajou-workspaces"
         WlrLayershell.layer: WlrLayer.Overlay
         WlrLayershell.keyboardFocus: root.opened ? WlrKeyboardFocus.OnDemand : WlrKeyboardFocus.None
         anchors { top: true; bottom: true; left: true; right: true }

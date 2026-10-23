@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "ventajou.spaces",
-  "name": "Spaces",
+  "id": "ventajou.workspaces",
+  "name": "Workspaces",
   "version": "1.0.2",
   "author": "andre",
   "description": "macOS-style workspace strip: thumbnails, reorder, and move between monitors",
